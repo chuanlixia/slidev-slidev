@@ -109,6 +109,8 @@ Hello, World!
 
 ## 布局和元数据
 
+由`---`包裹并且中间没有空行的内容会被解析为元数据。
+
 ```txt
 ---
 layout: cover
@@ -150,6 +152,8 @@ class: 'text-white'
  ```
 ````
 
+下面是具体效果：
+
 ```js {1,3|4-6}
 import { createApp } from 'vue'
 import Slidev from '@slidev/client'
@@ -175,6 +179,8 @@ app.mount('#app')
  app.mount('#app')
  ```
 ````
+
+下面是具体效果：
 
 ```js {monaco}
 import { createApp } from 'vue'
@@ -207,6 +213,8 @@ app.mount('#app')
   ```
 ````
 
+下面是具体效果：
+
 ```txt {monaco-diff}
 This line is removed on the right.
 just some text
@@ -238,6 +246,10 @@ h3 {
 }
 </style>
 ```
+
+<br>
+
+下面是具体效果：
 
 ### 红色标题
 
