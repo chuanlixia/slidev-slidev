@@ -484,6 +484,17 @@ $\sqrt{3x-1}+(1+x)^2$
 
 - 整段LaTeX，使用`$$`包裹:
 
+```txt
+$$
+\begin{array}{c}
+
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
+= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+
+...
+$$
+```
+
 $$
 \begin{array}{c}
 
@@ -496,3 +507,51 @@ $$
 
 \end{array}
 $$
+
+---
+
+# 图表
+
+可以创建图表，由[Mermaid](https://mermaid.js.org/)渲染
+
+````txt
+  ```mermaid
+  graph LR
+    A[方形] --> B((圆形))
+    B --> C{菱形}
+    C -->|One| D[结果1]
+    C -->|Two| E[结果2]
+  ```
+````
+
+```mermaid
+graph LR
+  A[方形] --> B((圆形))
+  B --> C{菱形}
+  C -->|One| D[结果1]
+  C -->|Two| E[结果2]
+```
+
+---
+
+# 图表
+
+可以配置样式
+
+````txt
+  ```mermaid {theme: 'forest', scale: 0.8}
+  graph LR
+    A[方形] --> B((圆形))
+    B --> C{菱形}
+    C -->|One| D[结果1]
+    C -->|Two| E[结果2]
+  ```
+````
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph LR
+  A[方形] --> B((圆形))
+  B --> C{菱形}
+  C -->|One| D[结果1]
+  C -->|Two| E[结果2]
+```
