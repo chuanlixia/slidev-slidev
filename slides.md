@@ -555,3 +555,54 @@ graph LR
   C -->|One| D[结果1]
   C -->|Two| E[结果2]
 ```
+
+---
+
+# 拆分为多个md文件
+  
+```txt
+# 页面1
+
+---
+src: ./subpage1.md
+---
+
+```
+
+---
+layout: two-cols
+---
+
+# 拆分为多个md文件
+
+可以修改页面的元数据，但是主页面的元数据优先级高于外部子页面的元数据
+
+`slides.md`
+
+```txt
+---
+src: ./subpage1.md
+background: https://sli.dev/favicon.png
+class: text-center
+---
+```
+
+`subpage1.md`
+
+```txt
+---
+layout: cover
+background: https://sli.dev/foo.png
+---
+```
+
+::right::
+
+元数据合成为
+```txt
+---
+layout: cover
+background: https://sli.dev/favicon.png
+class: text-center
+---
+```
