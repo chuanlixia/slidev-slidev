@@ -266,10 +266,10 @@ h3 {
 
 - 本地资源
 ```txt
-![Local Image](/pic.png)
+![Local Image](/assets/pic.png)
 ```
 
-![Local Image](/pic.png)
+![Local Image](/assets/pic.png)
 
 ---
 
@@ -279,7 +279,67 @@ h3 {
 
 - 如果想要设置样式
 ```txt
-<img src="/pic.png" class="m-10 h-40 rounded shadow" />
+<img src="/assets/pic.png" class="m-10 h-40 rounded shadow" />
 ```
 
-<img src="/pic.png" class="m-10 h-50 rounded shadow" />
+<img src="/assets/pic.png" class="m-10 h-50 rounded-10 shadow" />
+
+---
+
+# 用于演讲者模式的笔记
+
+```txt
+---
+layout: cover
+---
+
+# Page 1
+
+This is the cover page.
+
+<!-- 这是一个笔记 -->
+
+---
+```
+
+<img src="/assets/note.png" class="m-5 h-50 rounded shadow" />
+
+<!-- 这是一个笔记 -->
+
+---
+
+# 图标
+
+## slidev可以使用[`Iconify`](https://iconify.design!) 的任意图标，格式如下：
+
+{collection-name}-{icon-name}
+
+- `<mdi-account-circle />` - <mdi-account-circle />
+- `<carbon-badge />` - <carbon-badge />
+- `<uim-rocket />` - <uim-rocket />
+- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy />
+- `<logos-vue />` - <logos-vue />
+- 还有非常多...
+
+<style>
+  code {
+    color: #fca311;
+  }
+</style>
+
+---
+
+# 图标
+
+## 带样式的图标
+
+```txt
+<uim-rocket />
+<uim-rocket class="text-3xl text-red-400 mx-2" />
+<uim-rocket class="text-3xl text-red-400 mx-2 animate-ping" />
+```
+
+<uim-rocket />
+<uim-rocket class="text-3xl text-red-400 mx-2" />
+<uim-rocket class="text-3xl text-red-400 mx-2 animate-ping" />
+

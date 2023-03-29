@@ -1,6 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/logos': ^1.1.24
+  '@iconify-json/mdi': ^1.1.50
+  '@iconify-json/twemoji': ^1.1.11
+  '@iconify-json/uim': ^1.1.5
   '@slidev/cli': ^0.40.5
   '@slidev/theme-default': '*'
   '@slidev/theme-seriph': '*'
@@ -12,6 +16,10 @@ dependencies:
   '@slidev/theme-seriph': 0.21.3
 
 devDependencies:
+  '@iconify-json/logos': 1.1.24
+  '@iconify-json/mdi': 1.1.50
+  '@iconify-json/twemoji': 1.1.11
+  '@iconify-json/uim': 1.1.5
   playwright-chromium: 1.32.1
 
 packages:
@@ -563,15 +571,38 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/logos/1.1.24:
+    resolution: {integrity: sha512-A93dQCvPlka1c5Mn52lQYW4kEQkd3+oXzYI9ju2n8xW2aBJOyAltyJYcYWeVhw7bofJ0bj66Cw/r9avBCiKH0Q==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi/1.1.50:
+    resolution: {integrity: sha512-SgbT5w5eHCdOG74ZWPz7HlTGk6VsifIJhNi6lAsxj/5Nlqt6Cz4LlQmSa9eecU9p075Jub2aAx/o7YI+GCahRQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/ph/1.1.5:
     resolution: {integrity: sha512-iLXq3nohfGge22gL2tZmQ2WHBKkKkIbGWrkuyC8arckS4PWaONyh4A+uDPtSek9QbYDvi9AE2+NxWkNZhANotA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/twemoji/1.1.11:
+    resolution: {integrity: sha512-ZA2v2AGWPC0rxiZDLqsVD+DoYB3n5Ft5q0YYAsy9QyYvoNWSdh6Vxe5d3yUP4mSpNkE4YW96RAjiZu72uXb7kQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/uim/1.1.5:
+    resolution: {integrity: sha512-AbdW0nc8LJw0L7m9hvUSxUJ1/MCE5MzU0BSlQZAqerXrZ8LeYYcMrIz185IaCB0swYCm1Eb+FNIY8A2P0o609A==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils/2.1.5:
     resolution: {integrity: sha512-6MvDI+I6QMvXn5rK9KQGdpEE4mmLTcuQdLZEiX5N+uZB+vc4Yw9K1OtnOgkl8mp4d9X0UrILREyZgF1NUwUt+Q==}
