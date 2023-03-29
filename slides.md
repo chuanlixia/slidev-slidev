@@ -343,3 +343,107 @@ This is the cover page.
 <uim-rocket class="text-3xl text-red-400 mx-2" />
 <uim-rocket class="text-3xl text-red-400 mx-2 animate-ping" />
 
+---
+layout: two-cols
+---
+
+<template v-slot:default>
+
+# 插槽
+
+有些布局支持插槽，就是Vue的插槽。
+
+```txt
+---
+layout: two-cols
+---
+
+<template v-slot:default>
+
+# 插槽
+
+这些内容就是左边的内容
+
+</template>
+<template v-slot:right>
+
+# 这是右边
+
+这是右边的内容
+
+</template>
+```
+
+</template>
+
+<template v-slot:right>
+
+# 这是右边 
+
+这是右边的内容
+
+</template>
+
+---
+layout: two-cols
+---
+
+# 插槽
+
+可以使用语法糖来使用插槽
+
+```txt
+---
+layout: two-cols
+---
+
+# 插槽
+
+可以使用语法糖来使用插槽
+
+::right::
+
+# 这是右边
+
+这是右边的内容
+```
+
+::right::
+
+# 这是右边
+
+这是右边的内容
+
+---
+layout: two-cols
+---
+
+::right::
+
+# 这是右边
+
+这是右边的内容
+
+::default::
+
+# 插槽
+
+可以使用::default::来指定默认插槽
+
+```txt
+---
+layout: two-cols
+---
+
+::right::
+
+# 这是右边
+
+这是右边的内容
+
+::default::
+
+# 插槽
+
+可以使用::default::来指定默认插槽
+```
