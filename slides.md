@@ -606,3 +606,17 @@ background: https://sli.dev/favicon.png
 class: text-center
 ---
 ```
+
+---
+
+# 页面重用
+
+```txt
+---
+src: ./subpage1.md
+---
+
+---
+src: ./subpage1.md
+---
+```
