@@ -1,10 +1,12 @@
 ---
+title: Slidev使用说明
 theme: seriph
 class: text-center
 highlighter: shiki
 drawings:
   persist: false
 css: unocss
+exportFilename: 'slidev使用说明'
 ---
 
 <!-- 这是一个关于slidev的介绍 -->
@@ -447,3 +449,22 @@ layout: two-cols
 
 可以使用::default::来指定默认插槽
 ```
+
+---
+
+# 配置
+
+```txt
+---
+theme: seriph
+layout: cover
+backgroundColor: 'https://sli.dev/favicon.png'
+---
+
+# Slidev
+
+这是一个幻灯片
+```
+
+详细配置请参考Frontmatter Configures [官方文档](https://sli.dev/custom/#frontmatter-configures) 
+
