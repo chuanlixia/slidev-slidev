@@ -468,3 +468,31 @@ backgroundColor: 'https://sli.dev/favicon.png'
 
 详细配置请参考Frontmatter Configures [官方文档](https://sli.dev/custom/#frontmatter-configures) 
 
+---
+
+# LaTeX
+
+LaTeX由[KaTeX](https://katex.org/)渲染
+
+- 在行内使用LaTeX, 使用`$`包裹: $\sqrt{3x-1}+(1+x)^2$
+
+```txt
+$\sqrt{3x-1}+(1+x)^2$
+```
+
+<br>
+
+- 整段LaTeX，使用`$$`包裹:
+
+$$
+\begin{array}{c}
+
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
+= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+
+\nabla \cdot \vec{\mathbf{B}} & = 0
+
+\end{array}
+$$
