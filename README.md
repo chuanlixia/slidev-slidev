@@ -1,11 +1,12 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# 用Slidev做的关于Slidev的PPT 
 
-To start the slide show:
+运行本地环境：
 
 - `npm install`
 - `npm run dev`
 - visit http://localhost:3030
 
-Edit the [slides.md](./slides.md) to see the changes.
+需要修改PPT: 修改 [slides.md](./slides.md) .
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+
+[slidev中文文档](https://sli.dev/zh/)
